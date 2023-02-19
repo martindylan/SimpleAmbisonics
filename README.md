@@ -1,3 +1,7 @@
+# notas del fork
+Se modificó la abstracción [AmbiPanner~] para utilizar señales en vez de valores de control para controlar el azimuth y la elevación, y así evitar los pops que suelen generar los cambios de amplitud mediante control-rate.  
+También se agregó la abstracción [quady~] que consta de un [AmbiPanner~] que luego se decodifica con un [AmbiDecoderQuad~] y provee una visualización de los cuatro canales resultantes así como de la "ubicación" de la fuente sonora dentro del espacio cuadrofónico.
+
 ![Example of AmbiPanner~ and AmbiDecoderCube~ working in Pure Data](https://github.com/cpmpercussion/SimpleAmbisonics/raw/master/pd-example.jpg)
 
 SimpleAmbisonics
